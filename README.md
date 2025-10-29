@@ -14,6 +14,8 @@ https://github.com/NightRang3r/P4wnP1-A.L.O.A.-Payloads
 
 If you could give me a star too that would be appreciated I put in a lot of hours on this. Especially if you use this image.
 
+SSH username: root and password: toor if you need help with the system look at https://github.com/RoganDawes/P4wnP1_aloa
+
 The Waveshare 1.3inch OLED top hat with the SH1106 drive will work instantly with the image I provided the LCD will require you to delete the BeBoXGui folder and reinstall by running the install.sh in the LCD folder.
 
 The link to my personal server where this is hosted for direct download and sha256 verification is https://torchurch.us
@@ -23,6 +25,10 @@ I made a website, paid to get DNS, and even got https encryption for this projec
 GitHub has a size limit of 2GB for files and I didn't want to break it up then have people reassemble it. Also large files on GitHub can download slow.
 
 To use the whole storage area of the card cd / then type raspi-config --expand-rootfs
+
+To create a FAT32 Storage bin that can be mounted independently run /usr/local/P4wnP1/helper/genimg -i -s 1000 -o file_name_on_P4wnP1 -l drive_label
+
+To be able to mount the new drive go to USB settings on web app and select your newly created bin in the Mass Storage section and save it then deploy it.
 
 Use at least a 16GB card and for the best experience use a card with A2 V30 ratings. I use a 512GB card in my Zero 2 for the large storage capabilities.
 
